@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.parent {
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.text-show {
+    height: 400px;
+    width: 400px;
+    border: 1px solid #000;
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transition: .8s all ease;
+}
+
+.box1 {
+    background: #21b870;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.box2 {
+    background: #df5c00;
+    bottom: 500px;
+    right: 0;
+    opacity: 0;
+
+}
+
+.box3 {
+    background: #f5be08;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+}
+
+.box4 {
+    background: #2a92dd;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.btn-show {
+    margin: 10px auto;
+    width: 10em;
+    height: 3em;
+    background: #45bbfa;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 4px 0 #dadada;
+    cursor: pointer;
+}
